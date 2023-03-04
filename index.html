@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My form</title>
+    <link
+      rel="stylesheet"
+      href="./index.css"
+    />
+  </head>
+  <body>
+    <div id="intro-container">
+      <h1 id="title">Formulario de Damián</h1>
+      <p id="description">
+        Este es un formulario hecho totalmente por Damián, en el que va a
+        incluirse etiquetas html, estilado con css, uso de selectores de css,
+        uso de grid, uso de inputs, labels, buttons, un diseño y unos colores
+        únicos.
+      </p>
+    </div>
+    <form id="survey-form">
+      <fieldset id="fieldset-1">
+        <label
+          id="name-label"
+          for="name"
+        >
+          Nombre
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Escriba su nombre"
+          required
+        />
+        <label for="last-name"> Apellido </label>
+        <input
+          type="text"
+          id="last-name"
+          placeholder="Escriba su apellido"
+          name="last-name"
+          required
+        />
+        <label
+          id="email-label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Escriba su email"
+          required
+        />
+        <label for="password"> Contraseña </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Escriba su contraseña"
+          required
+        />
+      </fieldset>
+      <fieldset id="fieldset-2">
+        <label for="user-profile-picture"> Foto de perfil </label>
+        <input
+          type="file"
+          id="user-profile-picture"
+          name="profile-picture"
+        />
+        <label
+          id="number-label"
+          for="user-age"
+        >
+          Edad (opcional)
+        </label>
+        <input
+          type="number"
+          id="number"
+          min="18"
+          max="100"
+          name="age"
+          placeholder="Ponga su edad"
+          required
+        />
+        <label for="dropdown"> Género </label>
+        <select
+          id="dropdown"
+          required
+        >
+          <option value="0">Selecciona uno</option>
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+          <option value="3">Otro</option>
+        </select>
+      </fieldset>
+      <fieldset id="fieldset-3">
+        <label class="title"> ¿Qué rama te gustaría aprender? </label>
+        <label for="frontend">
+          <input
+            value="frontend"
+            type="checkbox"
+            id="frontend"
+          />Front-end
+        </label>
+        <label for="backend">
+          <input
+            value="backend"
+            type="checkbox"
+            id="backend"
+          />Back-end
+        </label>
+        <label for="fullstack">
+          <input
+            value="fullstack"
+            type="checkbox"
+            id="fullstack"
+          />Full-stack
+        </label>
+        <label for="data-analytics">
+          <input
+            value="data-analytics"
+            type="checkbox"
+            id="data-analytics"
+          />Data-analytics
+        </label>
+        <label for="data-science">
+          <input
+            value="data-science"
+            type="checkbox"
+            id="data-science"
+          />Data-science
+        </label>
+        <label for="data-engineer">
+          <input
+            value="data-engineer"
+            type="checkbox"
+            id="data-engineer"
+          />Data-engineer
+        </label>
+        <label for="qa">
+          <input
+            value="qa"
+            type="checkbox"
+            id="qa"
+          />QA
+        </label>
+        <label for="devops">
+          <input
+            value="devops"
+            type="checkbox"
+            id="devops"
+          />Devops
+        </label>
+        <label for="ml-engineer">
+          <input
+            value="ml-engineer"
+            type="checkbox"
+            id="ml-engineer"
+          />Machine learning engineer
+        </label>
+        <label class="title"> ¿De qué manera te gustaría estudiar? </label>
+        <label>
+          <input
+            value="presencial"
+            name="mood"
+            type="radio"
+            value="presencial"
+          />
+          Presencial
+        </label>
+        <label>
+          <input
+            value="virtual"
+            name="mood"
+            type="radio"
+            value="virtual"
+          />
+          Virtual
+        </label>
+        <label>
+          <input
+            value="hibrido"
+            name="mood"
+            type="radio"
+            value="hibrido"
+          />
+          Híbrido
+        </label>
+        <label class="title"
+          >¿Por qué te gustaría trabajar en la industria IT?</label
+        >
+        <textarea
+          maxlength="200"
+          form="survey-formm"
+          placeholder="Escriba aquí.."
+        ></textarea>
+      </fieldset>
+      <fieldset id="fieldset-4">
+        <label>
+          <input
+            value="yes"
+            type="checkbox"
+          />Aceptar <a href="#">términos y condiciones</a>
+        </label>
+        <button
+          name="submit"
+          id="submit"
+          type="submit"
+        >
+          Enviar
+        </button>
+      </fieldset>
+    </form>
+  </body>
+</html>
